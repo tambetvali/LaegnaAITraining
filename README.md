@@ -35,3 +35,4 @@ You have to be agnostic, in your formats, for the ways you use your documentatio
 
 The fine-tuning library I am considering here and now is "LitGPT": this is a lightweight, more or less simple implementation of GPT model you can use for training or especially, to find the limitations and bugs in your training algorithm rather with local hardware and limited context window - "lit" might mean light, but it also conveys the message that you can get through within your limitations:
 - [Learn the easiest to install and use, fine-tuning system](Training/LitGPT.md)
+- [Understand some of the background](Background) - structure of Sessions, Identifiers and Tools the AI you teach can use, and how it's still about the simple Q&A cards.
