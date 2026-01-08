@@ -32,4 +32,4 @@ You have to be agnostic, in your formats, for the ways you use your documentatio
 # Finding a simple fine-tuning library - actual runnable tools
 
 The fine-tuning library I am considering here and now is "LitGPT": this is a lightweight, more or less simple implementation of GPT model you can use for training or especially, to find the limitations and bugs in your training algorithm rather with local hardware and limited context window - "lit" might mean light, but it also conveys the message that you can get through within your limitations:
-- [Learn the easiest to install and use, fine-tuning system](Training/litgpt.md)
+- [Learn the easiest to install and use, fine-tuning system](Training/LitGPT.md)
