@@ -20,3 +20,8 @@ Read the texts to dive into the problems you are going to experience before you 
 
 # Fine-tuning compared to local context and lack of context
 
+Structured data formats, such as database schemas and strict standards, are hard to manage as they run into exceptions and paradigms, so in this ancient word you become official, losing your soul and spirit. A.I. is a machine spirit: it combines metal, aether and space to give your spirit an automata.
+
+You have to be agnostic, in your formats, for the ways you use your documentation:
+- [Use-case-agnostic document collection](Agnostic/collections.md)
+
