@@ -29,14 +29,14 @@ There is:
 
 This is the **pure architecture**, a potential machine.
 
-\`\`\`
+```
 [Transformer Blueprint]
   - N layers
   - M attention heads per layer
   - Feed-forward blocks
   - Positional encoding scheme
   - No weights yet
-\`\`\`
+```
 
 Nothing in this blueprint says:
 - “Head 3 tracks syntax”
@@ -58,13 +58,13 @@ This state has:
 
 Every attention head is identical in capability but different in random values.
 
-\`\`\`
+```
 [Randomly Initialized Transformer]
   - Random matrices
   - Random attention patterns
   - Random neuron activations
   - No learned structure
-\`\`\`
+```
 
 This is like a newborn brain with neurons but no experiences.
 
@@ -86,7 +86,7 @@ Gradient descent adjusts weights to reduce prediction error.
 None of this is programmed.  
 It is **entirely emergent**.
 
-\`\`\`
+```
 [Trained Transformer]
   Layer 1:
     - Head 1: punctuation patterns
@@ -100,7 +100,7 @@ It is **entirely emergent**.
   MLP neurons:
     - Concept detectors
     - Abstract feature encoders
-\`\`\`
+```
 
 The model becomes a **network of specialized circuits**.
 
@@ -128,13 +128,13 @@ The model may:
 
 Fine‑tuning can strengthen or weaken circuits.
 
-\`\`\`
+```
 [Fine-Tuned Transformer]
   - Some heads slightly repurposed
   - Some neurons strengthened
   - Some circuits overwritten
   - New domain-specific patterns added
-\`\`\`
+```
 
 ---
 
@@ -173,7 +173,7 @@ or similar ratios.
 
 # Summary of the Evolution
 
-\`\`\`
+```
 1. Void Seed (no weights)
    ↓
 2. Random Initialization (weights exist but meaningless)
@@ -183,6 +183,6 @@ or similar ratios.
 4. Fine-Tuning (circuits modified; new knowledge added)
    ↓
 5. Mixed-Data Fine-Tuning (stability + new skills)
-\`\`\`
+```
 
 Everything meaningful in the model — logic, structure, specialization, knowledge — is **self-learned**, not pre-programmed.
