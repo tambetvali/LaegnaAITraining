@@ -155,7 +155,7 @@ from which all other formats can be derived.
 
 ## 7. Linking Markdown to Q&A cards
 
-In this folder, `QnA.md` describes how to create manual Q&A cards.  
+[QnA.md] describes how to create manual Q&A cards.  
 These cards can be:
 
 - extracted from Markdown sections,  
