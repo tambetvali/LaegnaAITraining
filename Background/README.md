@@ -32,6 +32,12 @@ This chapter explains how to combine **large quantities of simple synthetic data
 
 ---
 
+## 1.5. [`qnaforvictory.md`](./qnaforvictory.md)
+
+This chapter brings together the entire methodology by showing how Q&A cards, JSON pipelines, tagging systems, and session‑based identifiers form a unified training strategy across LitGPT‑style models and other GPT frameworks. It explains why Q&A pairs remain the most universal training unit, how Anki fields and templates can structure large collections, and how JSON serves as the bridge between human‑organized decks and machine‑consumable datasets. The chapter also compares how different GPT models interpret tags, metadata, and hardcoded structures, and evaluates how these differences affect the effectiveness of Q&A‑driven training.
+
+---
+
 # 2. Summary and Conceptual Integration
 
 Together, these chapters form a unified methodology for training AI systems using structured Q&A cards, session‑based datasets, and labeled examples. The core ideas include:
