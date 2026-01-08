@@ -36,7 +36,7 @@ We define a note type that captures how ChatGPT / Copilot-like behavior works:
 
 Example data you might put into one Anki note:
 
-\`\`\`
+```
 Topic: Context Windows & Session Memory
 
 Background:
@@ -62,7 +62,7 @@ ContextWindowExample:
 AnswerExplanation:
 The context window is the text the model sees at once.
 Session memory is external and must be reinserted into the prompt.
-\`\`\`
+```
 
 ---
 
@@ -72,7 +72,7 @@ Session memory is external and must be reinserted into the prompt.
 
 **Front Template (Q):**
 
-\`\`\`html
+```html
 <div class="topic">{{Topic}}</div>
 
 <h2>Q:</h2>
@@ -83,11 +83,11 @@ Session memory is external and must be reinserted into the prompt.
 
 <h3>Context Window Example:</h3>
 <div class="context">{{ContextWindowExample}}</div>
-\`\`\`
+```
 
 **Back Template (A):**
 
-\`\`\`html
+```html
 <h2>A:</h2>
 <div class="answer">{{AnswerExplanation}}</div>
 
@@ -95,7 +95,7 @@ Session memory is external and must be reinserted into the prompt.
 
 <h3>Full Background:</h3>
 <div class="background">{{Background}}</div>
-\`\`\`
+```
 
 ---
 
@@ -103,7 +103,7 @@ Session memory is external and must be reinserted into the prompt.
 
 **Front Template (A → Q):**
 
-\`\`\`html
+```html
 <h2>A (Given):</h2>
 <div class="answer">{{AnswerExplanation}}</div>
 
@@ -111,11 +111,11 @@ Session memory is external and must be reinserted into the prompt.
 
 <h2>Original Question:</h2>
 <div class="question">{{UserMessage}}</div>
-\`\`\`
+```
 
 **Back Template (Q):**
 
-\`\`\`html
+```html
 <div class="topic">{{Topic}}</div>
 
 <h2>Q (Recall):</h2>
@@ -123,13 +123,13 @@ Session memory is external and must be reinserted into the prompt.
 
 <h3>Session Memory:</h3>
 <div class="memory">{{SessionMemory}}</div>
-\`\`\`
+```
 
 ---
 
 ### 3.3. CSS Styling for Anki Card
 
-\`\`\`css
+```css
 .topic {
   font-size: 1.2em;
   font-weight: bold;
@@ -153,7 +153,7 @@ body {
   font-family: sans-serif;
   font-size: 14px;
 }
-\`\`\`
+```
 
 ---
 
@@ -161,7 +161,7 @@ body {
 
 Imagine a simple web page previewing the card similarly to Anki’s browser:
 
-\`\`\`html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -245,7 +245,7 @@ They rely on the context window and external session memory.
 
 </body>
 </html>
-\`\`\`
+```
 
 ---
 
@@ -253,7 +253,7 @@ They rely on the context window and external session memory.
 
 Here is how a single note could be represented in a JSON-like format before becoming Anki cards:
 
-\`\`\`json
+```json
 {
   "note_type": "ContextWindowSessionMemory",
   "fields": {
@@ -277,7 +277,7 @@ Here is how a single note could be represented in a JSON-like format before beco
     }
   ]
 }
-\`\`\`
+```
 
 ---
 
@@ -290,7 +290,7 @@ This is a **conceptual example** showing:
 3. How to serialize to JSON.
 4. How to send it to a mock AI interface.
 
-\`\`\`python
+```python
 import json
 from string import Template
 
@@ -394,7 +394,7 @@ def mock_ai_interface(card_json_str):
 ai_response = mock_ai_interface(card_json)
 print("\nMock AI Response:")
 print(json.dumps(ai_response, indent=2))
-\`\`\`
+```
 
 ---
 
