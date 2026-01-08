@@ -4,6 +4,8 @@ Rather than collecting all kinds of information about RAG, fine-tuning and train
 
 My ready-made experience is such: it's hard to bring an innovative information to an AI without becoming somewhat experienced with some fine-tuning tools. You run into many problems of this lacking end-user support. A few web bots do this automatically on new information.
 
+*Except this page, articles are written by CoPilot introducing my ideas one by one in clarified manner and background. I think it's a fairly standard information, but often the presentation is long: here, it's only a few basic ideas and a single, simplest solution I could find; indeed you can grow further.*
+
 # Fine-tuning patterns
 
 To enter into the problems of lacking a conscious attention of an AI - training and fine doing -, having it running on routine patterns instead - RAG and other kinds of runtime memory -, you would run into goals of having your word understood.
