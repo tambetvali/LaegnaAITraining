@@ -2,7 +2,7 @@
 
 The **LaegnaAITraining** project explores how small teams can meaningfully shape AI behavior using structured Q&A cards, session‑based datasets, and controlled training environments. Modern AI systems do not begin with knowledge or specialization; they develop patterns through exposure to structured examples. This repository provides a conceptual framework for understanding how such examples can be constructed, labeled, and organized to guide an AI toward stable reasoning, contextual awareness, and tool‑like behavior — even without direct tool access.
 
-These documents form a progression: from the “void” state of an untrained model, to the emergence of specialization, to the development of session memory, and finally to the simulation of active assistant behaviors such as browsing or code editing. The final chapter ties these ideas together by explaining how quantity, quality, labeling, and contextual identifiers help unify disparate datasets into a coherent training strategy.
+These documents form a progression: from the “void” state of an untrained model, to the emergence of specialization, to the development of session memory, and finally to the simulation of active assistant behaviors such as browsing or code editing. The later chapters extend this foundation by showing how Q&A cards, JSON pipelines, labeling systems, and session identifiers can unify disparate datasets into a coherent training strategy. Together, these materials outline how small teams can build scalable, interpretable, and domain‑specific AI systems using simple but powerful training primitives.
 
 ---
 
@@ -63,6 +63,16 @@ By training on many small sessions with consistent internal logic, the model lea
 ### **Tool‑use simulation**
 Q&A cards can teach the model how to reason about web searches, file operations, or code editing by showing structured examples of how such actions are described, not performed.
 
+### **The universal training atom: input → output**
+All formats — JSON, Anki fields, Markdown, dialogues — ultimately collapse into the same structure:
+
+\`\`\`
+Q: <input>
+A: <output>
+\`\`\`
+
+This reduction is what makes Q&A cards so powerful and so widely applicable across GPT‑style models.
+
 ---
 
 # 3. What These Chapters Are All About
@@ -75,6 +85,7 @@ The chapters collectively demonstrate how:
 - local context anchors  
 - synthetic and human data mixing  
 - simulation modes  
-- and structured Q&A formats
-can be combined to produce stable, generalizable AI behavior — even without large‑scale resources or direct tool integration.
+- JSON pipelines  
+- and structured Q&A formats  
 
+can be combined to produce stable, generalizable AI behavior — even without large‑scale resources or direct tool integration.
