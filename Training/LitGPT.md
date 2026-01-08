@@ -17,9 +17,9 @@ Below is a practical guide to using LitGPT for Q&A‑style training, including c
 
 LitGPT installs cleanly:
 
-\`\`\`bash
+```bash
 pip install litgpt[all]
-\`\`\`
+```
 
 This installs:
 
@@ -37,15 +37,15 @@ No dependency juggling required.
 
 LitGPT can download models directly from Hugging Face:
 
-\`\`\`bash
+```bash
 litgpt download microsoft/phi-2
-\`\`\`
+```
 
 You can list all available models:
 
-\`\`\`bash
+```bash
 litgpt download list
-\`\`\`
+```
 
 ---
 
@@ -55,18 +55,18 @@ LitGPT fine‑tuning expects **JSON datasets** in Alpaca‑style or instruction�
 
 Example command:
 
-\`\`\`bash
+```bash
 litgpt finetune microsoft/phi-2 \
   --data JSON \
   --data.json_path my_cards.json \
   --data.val_split_fraction 0.1
-\`\`\`
+```
 
 ### Format of the JSON file
 
 LitGPT supports Alpaca‑style entries:
 
-\`\`\`json
+```json
 [
   {
     "instruction": "Question text here",
@@ -74,18 +74,18 @@ LitGPT supports Alpaca‑style entries:
     "output": "Answer text here"
   }
 ]
-\`\`\`
+```
 
 Or simple Q&A:
 
-\`\`\`json
+```json
 [
   {
     "question": "What is X?",
     "answer": "X is ..."
   }
 ]
-\`\`\`
+```
 
 LitGPT automatically tokenizes and formats these.
 
@@ -104,7 +104,7 @@ LitGPT does **not** require a database — any JSON file or URL is acceptable.
 
 ### Example: Serving cards via Flask
 
-\`\`\`python
+```python
 from flask import Flask, jsonify
 
 app = Flask(__name__)
@@ -117,15 +117,15 @@ def cards():
     ])
 
 app.run()
-\`\`\`
+```
 
 Then train with:
 
-\`\`\`bash
+```bash
 litgpt finetune microsoft/phi-2 \
   --data JSON \
   --data.json_path http://localhost:5000/cards
-\`\`\`
+```
 
 ---
 
@@ -135,7 +135,7 @@ LitGPT has a Python API for dynamic dataset creation.
 
 Example:
 
-\`\`\`python
+```python
 from litgpt import Trainer, Config
 
 cards = [
@@ -146,7 +146,7 @@ cards = [
 cfg = Config(model="microsoft/phi-2", data=cards)
 trainer = Trainer(cfg)
 trainer.finetune()
-\`\`\`
+```
 
 You can generate cards on the fly, load them from Anki, or synthesize them programmatically.
 
@@ -218,32 +218,32 @@ Depending on your automation needs.
 
 ### Download a model
 
-\`\`\`bash
+```bash
 litgpt download microsoft/phi-2
-\`\`\`
+```
 
 ### Fine‑tune on your Q&A cards
 
-\`\`\`bash
+```bash
 litgpt finetune microsoft/phi-2 \
   --data JSON \
   --data.json_path my_cards.json
-\`\`\`
+```
 
 ### Run inference
 
-\`\`\`bash
+```bash
 litgpt inference microsoft/phi-2 \
   --prompt "Explain entropy."
-\`\`\`
+```
 
 ### Evaluate model
 
-\`\`\`bash
+```bash
 litgpt evaluate microsoft/phi-2 \
   --data JSON \
   --data.json_path test_cards.json
-\`\`\`
+```
 
 ---
 
@@ -262,9 +262,9 @@ litgpt evaluate microsoft/phi-2 \
 ### 1. Command line to feed LitGPT training cards?  
 Use:
 
-\`\`\`bash
+```bash
 litgpt finetune model-name --data JSON --data.json_path file.json
-\`\`\`
+```
 
 ### 2. Custom server to serve cards?  
 Yes — any JSON endpoint works.
