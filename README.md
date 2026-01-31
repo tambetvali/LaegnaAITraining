@@ -33,8 +33,22 @@ You have to be agnostic, in your formats, for the ways you use your documentatio
 
 # Finding a simple fine-tuning library - actual runnable tools
 
+## Level 1: Hooks & Bones - end user will "hook" themselves to growing body of work and assistance of technicians
+
+If you want to training without specific IT education, tech-savy father, brother or child, but you already enjoy fine physics and psychologically sound interface of popular computing, indeed you pass to "Hooks and Bones" library:
+- [Hooks and Bones: Laegna AI Training 2](https://github.com/tambetvali/LaegnaAIHooksAndBones) - this is the second part of this actual manual, following the rather popular style (with some Appendix parts, altough I tried hard, some general public would find themselves easily disappointed - beginner code works, but professional's code expects them for ideas, debugging and code analysis; AI is not completely and blindly autonomous to make the code work; rather I tried to give you good selection of mermaid diagrams - graphics, which explains user interaction and the basic technological hook to common logic)
+
+## Level 2: LitGPT hands-on - tech-savy personnal finds themselves hands on
+
 The fine-tuning library I am considering here and now is "LitGPT": this is a lightweight, more or less simple implementation of GPT model you can use for training or especially, to find the limitations and bugs in your training algorithm rather with local hardware and limited context window - "lit" might mean light, but it also conveys the message that you can get through within your limitations:
 - [Learn the easiest to install and use, fine-tuning system](Training/LitGPT.md)
+
+## Level 3 + public: Appendix finds coders and near-scientists doing their stuff, and it has some popular parts
+
+*Popular parts*: there are appendixes about specific roles - boss, tech, end-user - and what they will do in our IT world;
+- More specifically, there are some critical code, selection of tools and libraries for everybody, and common workflows.
+
+***Appendix chapters***:
 - [Understand some of the background](Background) - structure of Sessions, Identifiers and Tools the AI you teach can use, and how its still about the simple Q&A cards.
 - [Multithread the parsers with IntelligentMistune before you start using SpaCy](IntelligentMistune) - you can use free-formed, general formats combined with specific tags, and extend mistune, python and flask to process your md files and repositories in somewhat dumb, but usable way if you also enter intelligent cards and let it find correlations between intelligent cards you can produce a few, with automated cards and summaries you can produce rather many, in multiple paradigm.
 IntelligentMistune
